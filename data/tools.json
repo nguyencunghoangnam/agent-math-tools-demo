@@ -1,5 +1,5 @@
 {
-  "demoDate": "11/08/2026",
+  "demoDate": "12/08/2026",
   "tools": [
     {
       "id": "quadratic",
@@ -7,9 +7,21 @@
       "category": "ĐẠI SỐ",
       "symbol": "x²",
       "description": "Tính biệt thức, tìm nghiệm và giải thích đầy đủ các trường hợp."
+    },
+    {
+      "id": "distance",
+      "name": "Khoảng cách hai điểm",
+      "category": "HÌNH HỌC",
+      "symbol": "↔",
+      "description": "Tính khoảng cách giữa hai điểm trong mặt phẳng tọa độ Oxy."
     }
   ],
   "updates": [
+    {
+      "date": "12/08/2026",
+      "title": "Đã xuất bản công cụ Khoảng cách hai điểm",
+      "note": "Agent đã tạo và kiểm thử công cụ tính khoảng cách giữa hai điểm trong mặt phẳng tọa độ Oxy."
+    },
     {
       "date": "11/08/2026",
       "title": "Khởi tạo Toán Agent",
