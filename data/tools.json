@@ -1,5 +1,5 @@
 {
-  "demoDate": "12/08/2026",
+  "demoDate": "13/08/2026",
   "tools": [
     {
       "id": "quadratic",
@@ -14,9 +14,21 @@
       "category": "HÌNH HỌC",
       "symbol": "↔",
       "description": "Tính khoảng cách giữa hai điểm trong mặt phẳng tọa độ Oxy."
+    },
+    {
+      "id": "gcd",
+      "name": "ƯCLN và BCNN",
+      "category": "SỐ HỌC",
+      "symbol": "÷",
+      "description": "Tìm ước chung lớn nhất và bội chung nhỏ nhất của hai số nguyên."
     }
   ],
   "updates": [
+    {
+      "date": "13/08/2026",
+      "title": "Công cụ ƯCLN và BCNN",
+      "note": "Agent đã tạo và kiểm thử công cụ tìm ƯCLN và BCNN của hai số nguyên."
+    },
     {
       "date": "12/08/2026",
       "title": "Đã xuất bản công cụ Khoảng cách hai điểm",
