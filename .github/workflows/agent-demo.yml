@@ -1,0 +1,69 @@
+name: Agent demo — 20 minutes
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: agent-demo
+  cancel-in-progress: false
+jobs:
+  day-12:
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: Chờ chu kỳ 10 phút đầu tiên
+        run: sleep 600
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Agent tạo công cụ cho ngày 12
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/generate-tool.mjs
+      - name: Kiểm định
+        run: node scripts/validate.mjs
+      - name: Xuất bản vào GitHub
+        run: |
+          git config user.name "Toan Agent"
+          git config user.email "agent@users.noreply.github.com"
+          git add data/tools.json
+          git commit -m "Agent cập nhật công cụ demo ngày 12"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: ., name: github-pages-day-12 }
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        with: { artifact_name: github-pages-day-12 }
+  day-13:
+    needs: day-12
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: Chờ chu kỳ 10 phút thứ hai
+        run: sleep 600
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Agent tạo công cụ cho ngày 13
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/generate-tool.mjs
+      - name: Kiểm định
+        run: node scripts/validate.mjs
+      - name: Xuất bản vào GitHub
+        run: |
+          git config user.name "Toan Agent"
+          git config user.email "agent@users.noreply.github.com"
+          git add data/tools.json
+          git commit -m "Agent cập nhật công cụ demo ngày 13"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: ., name: github-pages-day-13 }
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        with: { artifact_name: github-pages-day-13 }

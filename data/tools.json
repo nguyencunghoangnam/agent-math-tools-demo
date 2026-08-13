@@ -1,0 +1,19 @@
+{
+  "demoDate": "11/08/2026",
+  "tools": [
+    {
+      "id": "quadratic",
+      "name": "Phương trình bậc hai",
+      "category": "ĐẠI SỐ",
+      "symbol": "x²",
+      "description": "Tính biệt thức, tìm nghiệm và giải thích đầy đủ các trường hợp."
+    }
+  ],
+  "updates": [
+    {
+      "date": "11/08/2026",
+      "title": "Khởi tạo Toán Agent",
+      "note": "Agent đã xuất bản trang chủ và công cụ giải phương trình bậc hai."
+    }
+  ]
+}

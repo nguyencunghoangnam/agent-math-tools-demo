@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thư viện công cụ toán học được cập nhật và vận hành bởi Agent AI.">
+  <title>Toán Agent — Công cụ toán học mỗi ngày</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="nav shell">
+    <a class="brand" href="#"><span class="brand-mark">∑</span><span>TOÁN<span>AGENT</span></span></a>
+    <nav><a href="#tools">Công cụ</a><a href="#updates">Nhật ký</a><a href="#about">Giới thiệu</a></nav>
+    <span class="agent-status"><i></i> Agent đang vận hành</span>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow">THƯ VIỆN TOÁN HỌC TỰ PHÁT TRIỂN</div>
+        <h1>Mỗi ngày một công cụ.<br><em>Mỗi bài toán nhẹ hơn.</em></h1>
+        <p>Nhập dữ liệu, xem kết quả và hiểu từng bước giải. Các công cụ được Agent AI xây dựng, kiểm tra và cập nhật liên tục.</p>
+        <div class="hero-actions"><a class="button primary" href="#tools">Khám phá công cụ <span>↗</span></a><a class="button ghost" href="#updates">Xem cập nhật</a></div>
+        <div class="trust"><span>✓ Miễn phí</span><span>✓ Không cần đăng nhập</span><span>✓ Giải thích từng bước</span></div>
+      </div>
+      <div class="formula-stage" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="formula-card card-a"><small>ĐẠI SỐ</small><strong>x = <span>−b ± √Δ</span> / 2a</strong></div>
+        <div class="formula-card card-b"><small>HÌNH HỌC</small><strong>d = √[(x₂−x₁)² + (y₂−y₁)²]</strong></div>
+        <div class="formula-card card-c"><small>GIẢI TÍCH</small><strong>f′(x) = lim <span>Δx→0</span></strong></div>
+        <div class="core">AI<span>∴</span></div>
+      </div>
+    </section>
+
+    <section class="metrics shell">
+      <div><strong id="tool-count">01</strong><span>Công cụ đã xuất bản</span></div>
+      <div><strong id="demo-date">11/08/2026</strong><span>Cập nhật gần nhất · Demo</span></div>
+      <div><strong>24/7</strong><span>Vận hành bởi Agent</span></div>
+    </section>
+
+    <section class="tools-section shell" id="tools">
+      <div class="section-heading"><div><span class="kicker">BỘ CÔNG CỤ</span><h2>Học bằng cách <em>thực hành</em></h2></div><p>Mỗi công cụ tập trung vào một dạng toán, có kiểm tra dữ liệu và trình bày kết quả rõ ràng.</p></div>
+      <div id="tools-grid" class="tools-grid"><div class="loading">Đang tải các công cụ…</div></div>
+    </section>
+
+    <section class="updates shell" id="updates">
+      <div class="updates-card">
+        <div><span class="kicker">NHẬT KÝ AGENT</span><h2>Website đang tự lớn lên.</h2><p>Mỗi mốc thời gian demo tương ứng với một chu kỳ vận hành 10 phút.</p></div>
+        <div id="timeline" class="timeline"></div>
+      </div>
+    </section>
+
+    <section class="about shell" id="about">
+      <span class="giant-symbol">∞</span>
+      <div><span class="kicker">VẬN HÀNH TỰ ĐỘNG</span><h2>Được xây dựng và vận hành bởi <em>Agent AI</em></h2><p>Agent lựa chọn ý tưởng, tạo nội dung và chạy kiểm thử. Chỉ những công cụ vượt qua kiểm tra mới xuất hiện trên trang.</p></div>
+    </section>
+  </main>
+
+  <footer class="shell"><a class="brand" href="#"><span class="brand-mark">∑</span><span>TOÁN<span>AGENT</span></span></a><p>Demo thư viện công cụ toán học · Vận hành bởi Agent</p></footer>
+
+  <dialog id="tool-dialog"><button class="close" aria-label="Đóng">×</button><div id="tool-content"></div></dialog>
+  <script src="assets/app.js"></script>
+</body>
+</html>
