@@ -20,7 +20,7 @@ jobs:
         with: { node-version: 22 }
       - name: Agent tạo công cụ cho ngày 12
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.WEB_TU_DONG }}
         run: node scripts/generate-tool.mjs
       - name: Kiểm định
         run: node scripts/validate.mjs
@@ -50,7 +50,7 @@ jobs:
         with: { node-version: 22 }
       - name: Agent tạo công cụ cho ngày 13
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.WEB_TU_DONG }}
         run: node scripts/generate-tool.mjs
       - name: Kiểm định
         run: node scripts/validate.mjs
